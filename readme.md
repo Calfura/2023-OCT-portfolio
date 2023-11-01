@@ -28,3 +28,26 @@ Here is the code for the header we have:
         </nav>
     </header>
 ```
+
+### Footer
+Footer has social media links, and some contact and address information.
+
+```html
+<footer>
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook" target=""></i>
+        </a>
+        <a href="https://www.github.com">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+    <div class="info">
+        <p>Contact: 404040404</p>
+        <p>Address: 0 Street, Country</p>
+    </div>
+</footer>
+```
