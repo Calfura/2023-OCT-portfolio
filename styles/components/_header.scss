@@ -1,11 +1,6 @@
 @import "../defaults/colors";
 @import "../defaults/breakpoints";
-
-@mixin background-stuff() {
-    background-color: $primary-color;
-    padding: 16px;
-    text-align: center;
-}
+@import "./utils";
 
 header {
     @include background-stuff();
@@ -40,6 +35,24 @@ header {
         a {
             text-decoration: none;
             color: rgb(21, 21, 255);
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 50%;
         }
     }
 }

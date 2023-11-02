@@ -1,11 +1,7 @@
 @import "./styles/defaults/colors";
 @import "./styles/defaults/breakpoints";
-
-@mixin background-stuff() {
-    background-color: $primary-color;
-    padding: 16px;
-    text-align: center;
-}
+@import "./styles/components/header";
+@import "./styles/components/footer";
 
 body {
     margin: 0;
@@ -15,53 +11,4 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-@media screen and (min-width: $medium) {
-    header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        .logo-name {
-            .name {
-                margin-bottom: 0;
-            }
-        }
-
-        #nav-items {
-            width: 50%;
-        }
-    }
-}
-
-footer {
-    @include background-stuff();
-    
-    .social-media {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 30px;
-
-        a {
-            i {
-                color: rgb(22, 21, 21);
-                font-size: 24px;
-            }
-        }
-
-        .info {
-            color: rgb(22, 21, 21);
-        }
-    }
-}
-
-@media screen and (min-width: $medium) {
-    footer {
-        .social-media {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
 }
